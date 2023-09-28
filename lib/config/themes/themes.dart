@@ -6,3 +6,4 @@ class AppThemes {
     useMaterial3: true,
   );
 }
+// TODO: ກຳໜົດສີທັງໝົດຂອງແອບ

@@ -10,6 +10,8 @@ abstract class DailyNewsRemoteDataSource {
   Future<ArticlesListModel> getNewsArticle(
       {String? country, String? category, String? apiKey});
 }
+//
+//TODO: ໂຄ້ດສ່ວນນີ້ແມ່ນໂຄ້ດທີກຳນົດຂໍ້ມູນໄລຍະໄກທີ່ ເຮັດວຽກກັບ Api ເພື່ອເອີ້ນ ຂໍ້ມູນຂ່າວ ໂດຍຈັດການຂໍ້ຍົກເວັ້ນທີ່ທີ່ອາດເກີດຂື້ນໃນລະຫວ່າງການສົ່ງຄຳຂໍ Dio ແລະ returnResponse ຊ່ວຍໃຫ້ເຮົາເຫັນຂໍ້ຜິດພາດທີ່ເຮົາກຳນົດຂື້ນມາຊ່ວຍໃຫ້ຮຼ້ຂໍ້ຜິດພາດວ່່າຖືກຂໍ້ໃດ
 
 @LazySingleton(as: DailyNewsRemoteDataSource)
 class DailyNewsRemoteDataSourceImpl extends DailyNewsRemoteDataSource {

@@ -9,5 +9,7 @@ class AppRouter extends _$AppRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(page: HomeRoute.page, initial: true),
+        //
+        // TODO: ຂຽນໂຄດໃນ "AutoRoute(page: HomeRoute.page, initial: true)", ເພື່ອ GENERATED file  app_router.gr.dart
       ];
 }

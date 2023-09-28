@@ -43,3 +43,4 @@ class ArticleModel extends ArticleEntity {
   factory ArticleModel.fromJson(Map<String, dynamic> json) =>
       _$ArticleModelFromJson(json);
 }
+// TODO: ໂຄ້ດສ່ວນນີ້ແມ່ນເປັນໂຄ້ດສ້າງໂມເດວ ArticleModel ເພືອນຳໄປ GENERATED ເປັນໄຟລ article_model.g.dart

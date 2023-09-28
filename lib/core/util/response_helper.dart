@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:api_bloc/core/errors/exceptions.dart';
 import 'package:dio/dio.dart';
+// TODO: ໃຊ້ສຳຫຼັບຈັດການຂໍ້ຜິດພາດທີ່ເກີດຂື້ນລະຫວ່າງການເຮັດວຽກຂອງ Dio ແລະ ຈະສົ່ງຂໍ້ຜຶດພາດມາຕາມຮູບແບບທີ່ເກິດຂື້ນໃນຂໍ້ຜິດພາດໃນແອບ
 
 class ResponseHelper {
   static Exception returnResponse(DioException dioException) {

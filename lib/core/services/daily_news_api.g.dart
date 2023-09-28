@@ -7,7 +7,7 @@ part of 'daily_news_api.dart';
 // **************************************************************************
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
-
+// TODO: ເປັນໄຟລ GENERATED ໄດ້ມາຈາກ daily_news_api.dart
 class _DailyNewsApi implements DailyNewsApi {
   _DailyNewsApi(
     this._dio, {

@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       theme: AppThemes().appThemeData,
       routerConfig: getIt<AppRouter>().config(),
+      // TODO: ກຳນົດ Config router ໃຫ້ class AppRouter ໃຫ້ເປັນຫນ້າເລີ່ມຕົ້ນ
     );
   }
 }
