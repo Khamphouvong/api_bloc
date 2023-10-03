@@ -14,3 +14,6 @@ abstract class RegisterModule {
   @lazySingleton
   AppRouter appRouter() => AppRouter();
 }
+
+// TODO: RegisterModule  ນີ້ຈະໃຊ້ໃນຂະບວນການ Dependency Injection ເພື່ອໃຫ້ສາມາດເອີ້ນໃຊ້ຄາສ 
+//Dio ແລະ AppRouter ໃນສ່ວນອື່ນໆຂອງແອບພິເຄຊັ່ນໄດ້ຢ່າງສະດວກ ແລະ ມີຄວາມຍືດຫຍູນສູງ
