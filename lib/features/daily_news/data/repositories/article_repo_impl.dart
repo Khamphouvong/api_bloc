@@ -16,7 +16,7 @@ class ArticleRepoImpl implements ArticleRepo {
 
   @override
   Future<Either<Failure, ArticlesListModel>> getNewsArticle(
-      String country, String category, String apiKey) async {
+      String country, String category, String apiKey,) async {
     try {
       final httpResponse = await _dailyNewsRemoteDataSource.getNewsArticle(
         country: country,
@@ -25,11 +25,11 @@ class ArticleRepoImpl implements ArticleRepo {
       );
       return Right(httpResponse);
     } on ServerException catch (e) {
-      return Left(ServerFailure(e.message.toString()));
+      return Left(ServerFailure(e.message));
     } on SocketException catch (e) {
-      return Left(ServerFailure(e.message.toString()));
+      return Left(ServerFailure(e.message));
     } on ConnectionException catch (e) {
-      return Left(ConnectionFailure(e.message.toString()));
+      return Left(ConnectionFailure(e.message));
     }
   }
 }

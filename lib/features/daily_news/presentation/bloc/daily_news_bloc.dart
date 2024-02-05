@@ -15,12 +15,13 @@ class DailyNewsBloc extends Bloc<DailyNewsEvent, DailyNewsState> {
     on<DailyNewsEvent>(onGetNewsArticle);
   }
   Future<void> onGetNewsArticle(
-      DailyNewsEvent event, Emitter<DailyNewsState> emit) async {
+      DailyNewsEvent event, Emitter<DailyNewsState> emit,) async {
     final dataState = await _getNewsArticleUsecase(
       const GetNewsArticle(
-          country: 'us',
-          category: 'business',
-          apiKey: 'bdf2f746bb904107be9d6cdfa91a6829'),
+        country: 'us',
+        category: 'business',
+        apiKey: 'bdf2f746bb904107be9d6cdfa91a6829',
+      ),
     );
     emit(const DailyNewsLoading());
     dataState.fold(

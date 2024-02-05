@@ -8,7 +8,7 @@ import '../models/article_model.dart';
 
 abstract class DailyNewsRemoteDataSource {
   Future<ArticlesListModel> getNewsArticle(
-      {String? country, String? category, String? apiKey});
+      {String? country, String? category, String? apiKey,});
 }
 
 @LazySingleton(as: DailyNewsRemoteDataSource)
@@ -19,7 +19,7 @@ class DailyNewsRemoteDataSourceImpl extends DailyNewsRemoteDataSource {
 
   @override
   Future<ArticlesListModel> getNewsArticle(
-      {String? country, String? category, String? apiKey}) async {
+      {String? country, String? category, String? apiKey,}) async {
     try {
       return await dailyNewsApi.getNewsArticle(
         country: country,

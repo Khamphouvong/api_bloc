@@ -14,8 +14,8 @@ class GetNewsArticleUsecase
   GetNewsArticleUsecase(this._articleRepo);
   @override
   Future<Either<Failure, ArticlesListEntity>> call(
-      GetNewsArticle getNewsArticleParams) {
+      GetNewsArticle getNewsArticleParams,) {
     return _articleRepo.getNewsArticle(getNewsArticleParams.country,
-        getNewsArticleParams.category, getNewsArticleParams.apiKey);
+        getNewsArticleParams.category, getNewsArticleParams.apiKey,);
   }
 }

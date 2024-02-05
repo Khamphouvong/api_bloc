@@ -38,18 +38,18 @@ class HomeScreen extends StatelessWidget implements AutoRouteWrapper {
               itemBuilder: (context, index) {
                 return Container(
                   padding: const EdgeInsetsDirectional.only(
-                      start: 14, end: 14, bottom: 8, top: 8),
+                      start: 14, end: 14, bottom: 8, top: 8,),
                   height: MediaQuery.of(context).size.width / 2.2,
                   child: Row(
                     children: [
                       ImageWidget(
                           imageUrl: state.listNewsArticle
                                   ?.articlesEntity?[index].urlToImageEntity ??
-                              ''),
+                              '',),
                       NewsDescWidget(
                         articleModel:
                             state.listNewsArticle!.articlesEntity![index],
-                      )
+                      ),
                     ],
                   ),
                 );

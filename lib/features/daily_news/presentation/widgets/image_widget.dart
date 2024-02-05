@@ -20,7 +20,7 @@ class ImageWidget extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.black.withOpacity(0.08),
                       image: DecorationImage(
-                          image: imageProvider, fit: BoxFit.cover)),
+                          image: imageProvider, fit: BoxFit.cover,),),
                 ),
               ),
             ),
@@ -51,6 +51,6 @@ class ImageWidget extends StatelessWidget {
                   child: const Icon(Icons.error),
                 ),
               ),
-            ));
+            ),);
   }
 }
